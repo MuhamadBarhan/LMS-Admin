@@ -1,11 +1,11 @@
-import { BookOpen, Clock, MoreHorizontal, Plus, Search, Users } from "lucide-react";
-import { Link } from "react-router-dom";
+import { BookOpen, Clock, MoreHorizontal, Plus, Search, Users } from "lucide-react"
+import { Link } from "react-router-dom"
 
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { PageHeader } from "@/components/PageHeader";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Input } from "@/components/ui/input"
+import { PageHeader } from "@/components/PageHeader"
+import { Badge } from "@/components/ui/badge"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,10 +13,10 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from "@/components/ui/dropdown-menu"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
-export default function Courses() {
+export default function CoursesPage() {
   return (
     <>
       <PageHeader title="Course Management" />
@@ -80,16 +80,14 @@ export default function Courses() {
               <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {courses.map((course) => (
                   <Card key={course.id} className="overflow-hidden">
-                    <div className="aspect-video w-full">
-                      <img
+                    <div className="relative aspect-video">
+                    <img
                         src={course.image || "/placeholder.svg"}
                         alt={course.title}
                         className="object-cover w-full h-full"
                       />
                       <div className="absolute right-2 top-2">
-                        <Badge variant={course.status === "Published" ? "default" : "secondary"}>
-                          {course.status}
-                        </Badge>
+                        <Badge variant={course.status === "Published" ? "default" : "secondary"}>{course.status}</Badge>
                       </div>
                     </div>
                     <CardHeader className="p-4">
@@ -138,12 +136,12 @@ export default function Courses() {
                   <div className="divide-y">
                     {courses.map((course) => (
                       <div key={course.id} className="flex items-center gap-4 p-4">
-                        <div className="h-16 w-28 flex-shrink-0 overflow-hidden rounded-md">
-                          <img
-                            src={course.image || "/placeholder.svg"}
-                            alt={course.title}
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="relative h-16 w-28 flex-shrink-0 overflow-hidden rounded-md">
+                        <img
+                        src={course.image || "/placeholder.svg"}
+                        alt={course.title}
+                        className="object-cover w-full h-full"
+                      />
                         </div>
                         <div className="flex-1 space-y-1">
                           <div className="flex items-center justify-between">
@@ -194,7 +192,7 @@ export default function Courses() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 const courses = [
