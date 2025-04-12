@@ -204,7 +204,7 @@ const courses = [
     duration: "12 weeks",
     students: 245,
     status: "Published",
-    image: "/src/assets/courses/dsf.jpg",
+    image: "/assets/courses/dsf.jpg",
   },
   {
     id: "CRS002",
@@ -214,7 +214,7 @@ const courses = [
     duration: "8 weeks",
     students: 189,
     status: "Published",
-    image: "/src/assets/courses/wdb.png",
+    image: "/assets/courses/wdb.png",
   },
   {
     id: "CRS003",
@@ -224,7 +224,7 @@ const courses = [
     duration: "10 weeks",
     students: 156,
     status: "Published",
-    image: "/src/assets/courses/mad.png",
+    image: "/assets/courses/mad.png",
   },
   {
     id: "CRS004",
@@ -234,7 +234,7 @@ const courses = [
     duration: "6 weeks",
     students: 112,
     status: "Draft",
-    image: "/src/assets/courses/dsf.jpg",
+    image: "/assets/courses/dsf.jpg",
   },
   {
     id: "CRS005",
@@ -244,7 +244,7 @@ const courses = [
     duration: "8 weeks",
     students: 203,
     status: "Published",
-    image: "/src/assets/courses/dsf.jpg",
+    image: "/assets/courses/dsf.jpg",
   },
   {
     id: "CRS006",
@@ -254,7 +254,7 @@ const courses = [
     duration: "9 weeks",
     students: 178,
     status: "Published",
-    image: "/src/assets/courses/dsf.jpg",
+    image: "/assets/courses/dsf.jpg",
   },
   {
     id: "CRS007",
@@ -264,7 +264,7 @@ const courses = [
     duration: "7 weeks",
     students: 134,
     status: "Draft",
-    image: "/src/assets/courses/dsf.jpg",
+    image: "/assets/courses/dsf.jpg",
   },
   {
     id: "CRS008",
@@ -274,6 +274,6 @@ const courses = [
     duration: "8 weeks",
     students: 167,
     status: "Published",
-    image: "/src/assets/courses/dsf.jpg",
+    image: "/assets/courses/dsf.jpg",
   },
 ];
