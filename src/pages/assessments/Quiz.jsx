@@ -55,7 +55,7 @@ export default function Quiz() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Button variant="outline" size="icon" asChild>
-              <Link href="/assessments">
+              <Link to="/assessments">
                 <ArrowLeft className="h-4 w-4" />
                 <span className="sr-only">Back</span>
               </Link>

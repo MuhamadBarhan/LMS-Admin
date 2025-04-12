@@ -183,7 +183,7 @@ import {
               </Collapsible>
             </SidebarMenuItem>
 
-            <SidebarMenuItem>
+            {/* <SidebarMenuItem>
               <Collapsible className="w-full" defaultOpen={isActiveGroup(["/reports"])}>
                 <CollapsibleTrigger className="flex w-full items-center justify-between rounded-md p-2 hover:bg-sidebar-accent">
                   <div className="flex items-center gap-2">
@@ -310,7 +310,7 @@ import {
                   </SidebarMenuSub>
                 </CollapsibleContent>
               </Collapsible>
-            </SidebarMenuItem>
+            </SidebarMenuItem> */}
 
             </SidebarMenu>
           </SidebarGroup>
