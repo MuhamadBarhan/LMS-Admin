@@ -266,9 +266,8 @@ export default function Performance() {
                           {Array.from({ length: 5 }).map((_, i) => (
                             <Star
                               key={i}
-                              className={`h-4 w-4 ${
-                                i < review.rating ? "fill-amber-400 text-amber-400" : "fill-muted text-muted-foreground"
-                              }`}
+                              className={`h-4 w-4 ${i < review.rating ? "fill-amber-400 text-amber-400" : "fill-muted text-muted-foreground"
+                                }`}
                             />
                           ))}
                         </div>

@@ -1,5 +1,6 @@
 import { MoreHorizontal, Plus, Search } from "lucide-react"
 import { Link } from "react-router-dom"
+// import axios from "axios"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -17,6 +18,20 @@ import {
 } from "@/components/ui/dropdown-menu"
 
 export default function Users() {
+
+  // const [users, setUsers] = useState([])
+
+  // useEffect(() => {
+  //   axios
+  //     .get("http://localhost:8080/users")
+  //     .then((res) => {
+  //       setUsers(res.data)
+  //     })
+  //     .catch((err) => {
+  //       console.error("Failed to fetch users:", err)
+  //     })
+  // }, [])
+
   return (
     <>
       <PageHeader title="User Management" />
@@ -73,10 +88,12 @@ export default function Users() {
                   <TableHead>Name</TableHead>
                   <TableHead>Email</TableHead>
                   <TableHead>Role</TableHead>
+                  <TableHead>Education</TableHead>
                   <TableHead>Status</TableHead>
                   <TableHead>Joined</TableHead>
                   <TableHead className="text-right">Actions</TableHead>
                 </TableRow>
+
               </TableHeader>
               <TableBody>
                 {users.map((user) => (
@@ -95,6 +112,7 @@ export default function Users() {
                     </TableCell>
                     <TableCell>{user.email}</TableCell>
                     <TableCell>{user.role}</TableCell>
+                    <TableCell>{user.education}</TableCell>
                     <TableCell>
                       <Badge
                         variant={
@@ -142,6 +160,7 @@ const users = [
     role: "Student",
     status: "Active",
     joined: "Jan 15, 2023",
+    education: "B.Tech IT",
   },
   {
     id: "USR002",
@@ -150,6 +169,7 @@ const users = [
     role: "Student",
     status: "Active",
     joined: "Feb 3, 2023",
+    education: "B.Sc Computer Science",
   },
   {
     id: "USR003",
@@ -158,6 +178,7 @@ const users = [
     role: "Instructor",
     status: "Active",
     joined: "Nov 12, 2022",
+    education: "M.Tech Software Engineering",
   },
   {
     id: "USR004",
@@ -166,6 +187,7 @@ const users = [
     role: "Student",
     status: "Inactive",
     joined: "Mar 21, 2023",
+    education: "B.Com",
   },
   {
     id: "USR005",
@@ -174,6 +196,7 @@ const users = [
     role: "Admin",
     status: "Active",
     joined: "Aug 5, 2022",
+    education: "MBA",
   },
   {
     id: "USR006",
@@ -182,6 +205,7 @@ const users = [
     role: "Student",
     status: "Pending",
     joined: "Apr 10, 2023",
+    education: "B.A English",
   },
   {
     id: "USR007",
@@ -190,5 +214,7 @@ const users = [
     role: "Instructor",
     status: "Active",
     joined: "Dec 8, 2022",
+    education: "Ph.D. in Computer Science",
   },
-]
+];
+

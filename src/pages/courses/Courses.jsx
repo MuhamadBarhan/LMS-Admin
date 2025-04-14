@@ -79,7 +79,7 @@ export default function CoursesPage() {
             <TabsContent value="grid" className="space-y-4">
               <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {courses.map((course) => (
-                  <Card key={course.id} className="overflow-hidden">
+                  <Card key={course.id} className="overflow-hidden p-0">
                     <div className="relative aspect-video">
                     <img
                         src={course.image || "/placeholder.svg"}
